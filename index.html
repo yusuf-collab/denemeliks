@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benim Web Sitem</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f0f13;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header / Navigasyon */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: #16161a;
+            border-bottom: 1px solid #242629;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #7f5af0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #94a1b2;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #7f5af0;
+        }
+
+        /* Ana Bölüm (Hero) */
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #7f5af0;
+        }
+
+        .hero p {
+            color: #94a1b2;
+            max-width: 550px;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            background-color: #7f5af0;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #6c47d9;
+            transform: translateY(-2px);
+        }
+
+        /* Kartlar / Projeler */
+        .projects {
+            padding: 50px 8%;
+            background-color: #16161a;
+        }
+
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 1.8rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #242629;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #7f5af0;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #ffffff;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            color: #94a1b2;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #94a1b2;
+            font-size: 0.85rem;
+            border-top: 1px solid #242629;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Üst Menü -->
+    <header>
+        <div class="logo">Portfolyo<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#projects">Çalışmalar</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ana Hoşgeldin Alanı -->
+    <section id="home" class="hero">
+        <h1>Yaratıcı Dijital <span>İçerikler</span></h1>
+        <p>Video kurgu, grafik tasarım ve dijital projeler için hazırladığım kişisel web siteme hoş geldiniz.</p>
+        <a href="#projects" class="btn">Projeleri İncele</a>
+    </section>
+
+    <!-- Kartlar -->
+    <section id="projects" class="projects">
+        <h2>Neler Yapıyorum?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Video Edit & Animasyon</h3>
+                <p>Keyframe efektleri, ritmik kurgular ve yüksek kaliteli video düzenlemeleri.</p>
+            </div>
+            <div class="card">
+                <h3>Grafik & Görsel Tasarım</h3>
+                <p>Özel doku tasarımları, dijital çizimler ve sosyal medya görselleri.</p>
+            </div>
+            <div class="card">
+                <h3>Proje Geliştirme</h3>
+                <p>Özel oyun eklentileri, otomasyonlar ve interaktif dijital içerikler.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alt Bilgi -->
+    <footer>
+        <p>&copy; 2026 Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
