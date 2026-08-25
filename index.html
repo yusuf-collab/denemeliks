@@ -134,6 +134,344 @@
             height: 90px;
             border-radius: 50%;
             border: 2px solid #7f5af0;
+            background-image: url('https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-aiso/7342812301138247685~c5_100x100.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-color: #242629;
+        }
+
+        .profile-details h2 {
+            font-size: 1.6rem;
+            color: #fff;
+            letter-spacing: 0.5px;
+        }
+
+        .profile-details .username {
+            color: #7f5af0;
+            font-size: 0.95rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .profile-stats {
+            display: flex;
+            gap: 18px;
+            margin: 10px 0;
+            background-color: #16161a;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid #242629;
+        }
+
+        .stat {
+            font-size: 0.9rem;
+        }
+
+        .stat strong {
+            color: #fff;
+        }
+
+        .stat span {
+            color: #94a1b2;
+        }
+
+        .profile-bio {
+            font-size: 0.9rem;
+            color: #d1d5db;
+            line-height: 1.4;
+            margin-top: 10px;
+        }
+
+        /* Video Izgarası */
+        .video-grid-title {
+            margin: 25px 0 15px 0;
+            padding-top: 20px;
+            border-top: 1px solid #242629;
+            font-size: 1rem;
+            color: #94a1b2;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            gap: 10px;
+        }
+
+        .video-card {
+            aspect-ratio: 3/4;
+            background-color: #242629;
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: transform 0.2s, border-color 0.2s;
+            text-decoration: none;
+            display: flex;
+            align-items: flex-end;
+            padding: 6px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .video-card:hover {
+            transform: scale(1.04);
+            border-color: #fe2c55;
+        }
+
+        .video-views {
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: #fff;
+            background: rgba(0,0,0,0.7);
+            padding: 2px 5px;
+            border-radius: 4px;
+            z-index: 2;
+        }
+
+        .tiktok-link-btn {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            background-color: #fe2c55;
+            color: white;
+            padding: 12px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        .tiktok-link-btn:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #94a1b2;
+            font-size: 0.85rem;
+            border-top: 1px solid #242629;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Üst Menü -->
+    <header>
+        <div class="logo">Sweet.§ <span>Edits</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#contact">TikTok Profilim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Bölümü -->
+    <section id="home" class="hero">
+        <h1>Sweet.§ <span>Edits</span></h1>
+        <p>PC CapCut Editor | Edit, Efekt ve Dijital İçerik Üretimi</p>
+        <a href="#contact" class="btn">TikTok Profiline Git</a>
+    </section>
+
+    <!-- TikTok Profil Bölümü -->
+    <section id="contact" class="tiktok-section">
+        <div class="tiktok-container">
+            
+            <!-- Profil Bilgisi -->
+            <div class="profile-header">
+                <div class="profile-avatar"></div>
+                <div class="profile-details">
+                    <h2>Sweet.§ Edits</h2>
+                    <p class="username">@zeku.sweet</p>
+                    
+                    <div class="profile-stats">
+                        <div class="stat"><strong>118</strong> <span>Takip ediliyor</span></div>
+                        <div class="stat"><strong>2082</strong> <span>Takipçiler</span></div>
+                        <div class="stat"><strong>37.6K</strong> <span>Beğeniler</span></div>
+                    </div>
+
+                    <div class="profile-bio">
+                        Pc capcut Editor<br>
+                        Promo for dm<br>
+                        Alt account: @swalt.edits
+                    </div>
+                </div>
+            </div>
+
+            <!-- Videolar -->
+            <div class="video-grid-title">Son Paylaşılan Videolar</div>
+            <div class="video-grid">
+                <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="video-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('https://images.unsplash.com/photo-1578632767115-351597cf2477?w=300');">
+                    <span class="video-views">▶ 9739</span>
+                </a>
+                <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="video-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('https://images.unsplash.com/photo-1534447677768-be436bb09401?w=300');">
+                    <span class="video-views">▶ 662</span>
+                </a>
+                <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="video-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=300');">
+                    <span class="video-views">▶ 424</span>
+                </a>
+                <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="video-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=300');">
+                    <span class="video-views">▶ 405</span>
+                </a>
+                <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="video-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=300');">
+                    <span class="video-views">▶ 360</span>
+                </a>
+                <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="video-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('https://images.unsplash.com/photo-1563089145-599997674d42?w=300');">
+                    <span class="video-views">▶ 354</span>
+                </a>
+            </div>
+
+            <!-- Buton -->
+            <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="tiktok-link-btn">TikTok'ta Sayfamı Aç ↗</a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sweet.§ Edits. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet.§ Edits | Portfolyo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #0f0f13;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header / Menü */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: #16161a;
+            border-bottom: 1px solid #242629;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #7f5af0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #94a1b2;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #7f5af0;
+        }
+
+        /* Hero / Karşılama Alanı */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #7f5af0;
+        }
+
+        .hero p {
+            color: #94a1b2;
+            max-width: 550px;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            background-color: #7f5af0;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #6c47d9;
+            transform: translateY(-2px);
+        }
+
+        /* TikTok Profil Alanı */
+        .tiktok-section {
+            padding: 60px 5%;
+            background-color: #16161a;
+        }
+
+        .tiktok-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #0f0f13;
+            border: 1px solid #7f5af0;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(127, 90, 240, 0.15);
+        }
+
+        /* Profil Üst Bilgileri */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .profile-avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 2px solid #7f5af0;
             background-image: url('https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/7342812301138247685~c5_100x100.jpeg');
             background-size: cover;
             background-position: center;
