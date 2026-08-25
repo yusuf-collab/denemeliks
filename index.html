@@ -12,7 +12,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        /* Yumuşak Kaydırma */
+        /* Yumuşak Sayfa Kaydırma */
         html {
             scroll-behavior: smooth;
         }
@@ -23,7 +23,7 @@
             line-height: 1.6;
         }
 
-        /* Header / Navigasyon */
+        /* Header / Menü */
         header {
             display: flex;
             justify-content: space-between;
@@ -62,9 +62,9 @@
             color: #7f5af0;
         }
 
-        /* Ana Bölüm (Hero) */
+        /* Hero / Karşılama Alanı */
         .hero {
-            min-height: 70vh;
+            min-height: 60vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -105,146 +105,142 @@
             transform: translateY(-2px);
         }
 
-        /* Projeler */
-        .projects {
-            padding: 60px 8%;
+        /* TikTok Profil Alanı */
+        .tiktok-section {
+            padding: 60px 5%;
             background-color: #16161a;
         }
 
-        .projects h2 {
-            text-align: center;
-            margin-bottom: 35px;
-            font-size: 1.8rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background-color: #242629;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #333;
-            transition: transform 0.3s, border-color 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: #7f5af0;
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: #ffffff;
-            font-size: 1.2rem;
-        }
-
-        .card p {
-            color: #94a1b2;
-            font-size: 0.9rem;
-        }
-
-        /* TikTok / İletişim Bölümü */
-        .tiktok-section {
-            padding: 60px 8%;
-            text-align: center;
+        .tiktok-container {
+            max-width: 800px;
+            margin: 0 auto;
             background-color: #0f0f13;
-        }
-
-        .tiktok-section h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        .tiktok-section p.sub {
-            color: #94a1b2;
-            margin-bottom: 30px;
-        }
-
-        /* TikTok Kartı */
-        .tiktok-card {
-            background: #16161a;
             border: 1px solid #7f5af0;
             border-radius: 16px;
-            padding: 25px;
-            max-width: 650px;
-            margin: 0 auto;
+            padding: 30px;
             box-shadow: 0 10px 30px rgba(127, 90, 240, 0.15);
         }
 
-        .tiktok-info-box {
-            text-align: left;
-            margin-bottom: 20px;
-        }
-
-        .tiktok-info-box h3 {
-            font-size: 1.4rem;
-            color: #fff;
-        }
-
-        .tiktok-info-box .username {
-            color: #7f5af0;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .tiktok-stats {
+        /* Profil Üst Bilgileri */
+        .profile-header {
             display: flex;
+            align-items: center;
             gap: 20px;
-            margin: 15px 0;
-            background-color: #242629;
-            padding: 12px;
-            border-radius: 8px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
         }
 
-        .stat-item span {
-            color: #94a1b2;
-            font-size: 0.85rem;
-        }
-
-        .stat-item strong {
+        .profile-avatar {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #fe2c55, #25f4ee);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: bold;
             color: #fff;
         }
 
-        .bio {
-            color: #94a1b2;
+        .profile-details h2 {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .profile-details .username {
+            color: #7f5af0;
+            font-size: 0.95rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .profile-stats {
+            display: flex;
+            gap: 18px;
+            margin: 10px 0;
+            background-color: #16161a;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid #242629;
+        }
+
+        .stat {
             font-size: 0.9rem;
+        }
+
+        .stat strong {
+            color: #fff;
+        }
+
+        .stat span {
+            color: #94a1b2;
+        }
+
+        .profile-bio {
+            font-size: 0.9rem;
+            color: #d1d5db;
             line-height: 1.4;
-            margin-bottom: 15px;
+            margin-top: 10px;
         }
 
-        /* Ekran Görüntüsü Çerçevesi */
-        .screenshot-container {
-            width: 100%;
-            border-radius: 10px;
-            overflow: hidden;
+        /* Video Izgarası */
+        .video-grid-title {
+            margin: 25px 0 15px 0;
+            padding-top: 20px;
+            border-top: 1px solid #242629;
+            font-size: 1rem;
+            color: #94a1b2;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            gap: 10px;
+        }
+
+        .video-card {
+            aspect-ratio: 3/4;
+            background-color: #242629;
+            border-radius: 8px;
             border: 1px solid #333;
-            margin-bottom: 20px;
+            transition: transform 0.2s, border-color 0.2s;
+            text-decoration: none;
+            display: flex;
+            align-items: flex-end;
+            padding: 6px;
         }
 
-        .screenshot-container img {
-            width: 100%;
-            height: auto;
+        .video-card:hover {
+            transform: scale(1.04);
+            border-color: #fe2c55;
+        }
+
+        .video-views {
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: #fff;
+            background: rgba(0,0,0,0.7);
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        .tiktok-link-btn {
             display: block;
-        }
-
-        .tiktok-btn {
+            text-align: center;
+            margin-top: 25px;
             background-color: #fe2c55;
             color: white;
-            text-decoration: none;
-            padding: 12px 30px;
+            padding: 12px;
             border-radius: 25px;
+            text-decoration: none;
             font-weight: bold;
-            display: inline-block;
-            transition: transform 0.2s, opacity 0.2s;
+            transition: opacity 0.2s, transform 0.2s;
         }
 
-        .tiktok-btn:hover {
+        .tiktok-link-btn:hover {
             opacity: 0.9;
-            transform: scale(1.03);
+            transform: scale(1.02);
         }
 
         /* Footer */
@@ -254,7 +250,6 @@
             color: #94a1b2;
             font-size: 0.85rem;
             border-top: 1px solid #242629;
-            background-color: #16161a;
         }
     </style>
 </head>
@@ -266,8 +261,7 @@
         <nav>
             <ul>
                 <li><a href="#home">Ana Sayfa</a></li>
-                <li><a href="#projects">Neler Yapıyorum?</a></li>
-                <li><a href="#contact">TikTok & İletişim</a></li>
+                <li><a href="#contact">TikTok Profile</a></li>
             </ul>
         </nav>
     </header>
@@ -275,262 +269,67 @@
     <!-- Hero Bölümü -->
     <section id="home" class="hero">
         <h1>Sweet.Ş <span>Edits</span></h1>
-        <p>PC CapCut Editor | Kreatif kurgu, efektler ve dijital içerik üretimi.</p>
-        <a href="#contact" class="btn">TikTok Hesabıma Git</a>
+        <p>PC CapCut Editor | Edit, Efekt ve Dijital İçerik Üretimi</p>
+        <a href="#contact" class="btn">TikTok Profiline Git</a>
     </section>
 
-    <!-- Çalışmalar Bölümü -->
-    <section id="projects" class="projects">
-        <h2>Hizmetler & İçerikler</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Video Edit & CapCut</h3>
-                <p>PC CapCut ile özel geçişler, ritim odaklı kurgular ve yüksek kalitede video içerikleri.</p>
-            </div>
-            <div class="card">
-                <h3>Tanıtım & Promo</h3>
-                <p>Sosyal medya projeleri, sponsorluklar ve özel tanıtım videoları (Promo for DM).</p>
-            </div>
-            <div class="card">
-                <h3>Özel Tasarımlar</h3>
-                <p>Kişiye özel edit konseptleri ve sosyal medya için ilgi çekici görsel içerikler.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- TikTok & İletişim Bölümü -->
+    <!-- TikTok Profil Bölümü -->
     <section id="contact" class="tiktok-section">
-        <h2>TikTok Sayfam & İletişim</h2>
-        <p class="sub">En son videolarımı izlemek ve DM üzerinden iletişime geçmek için sayfamı ziyaret edin.</p>
+        <div class="tiktok-container">
+            
+            <!-- Profil Bilgisi -->
+            <div class="profile-header">
+                <div class="profile-avatar">SŞ</div>
+                <div class="profile-details">
+                    <h2>Sweet.Ş Edits</h2>
+                    <p class="username">@zeku.sweet</p>
+                    
+                    <div class="profile-stats">
+                        <div class="stat"><strong>118</strong> <span>Takip ediliyor</span></div>
+                        <div class="stat"><strong>2082</strong> <span>Takipçiler</span></div>
+                        <div class="stat"><strong>37.6K</strong> <span>Beğeniler</span></div>
+                    </div>
 
-        <div class="tiktok-card">
-            <!-- Profil Bilgileri -->
-            <div class="tiktok-info-box">
-                <h3>Sweet.Ş Edits</h3>
-                <p class="username">@zeku.sweet</p>
-                
-                <div class="tiktok-stats">
-                    <div class="stat-item"><strong>118</strong> <span>Takip ediliyor</span></div>
-                    <div class="stat-item"><strong>2082</strong> <span>Takipçiler</span></div>
-                    <div class="stat-item"><strong>37.6K</strong> <span>Beğeniler</span></div>
-                </div>
-
-                <div class="bio">
-                    Pc capcut Editor<br>
-                    Promo for dm<br>
-                    Alt account: @swalt.edits
+                    <div class="profile-bio">
+                        Pc capcut Editor<br>
+                        Promo for dm<br>
+                        Alt account:@swalt.edits
+                    </div>
                 </div>
             </div>
 
-            <!-- Ekran Görüntüsü -->
-            <div class="screenshot-container">
-                <img src="tiktok-profil.jpg" alt="Sweet.Ş Edits TikTok Profil Ekran Görüntüsü">
+            <!-- Videolar -->
+            <div class="video-grid-title">Son Paylaşılan Videolar</div>
+            <div class="video-grid">
+                <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="video-card">
+                    <span class="video-views">▶ 9739</span>
+                </a>
+                <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="video-card">
+                    <span class="video-views">▶ 662</span>
+                </a>
+                <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="video-card">
+                    <span class="video-views">▶ 424</span>
+                </a>
+                <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="video-card">
+                    <span class="video-views">▶ 405</span>
+                </a>
+                <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="video-card">
+                    <span class="video-views">▶ 360</span>
+                </a>
+                <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="video-card">
+                    <span class="video-views">▶ 354</span>
+                </a>
             </div>
 
-            <!-- TikTok Butonu -->
-            <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="tiktok-btn">TikTok'ta Profilimi Aç ↗</a>
+            <!-- Buton -->
+            <a href="https://www.tiktok.com/@zeku.sweet" target="_blank" class="tiktok-link-btn">TikTok'ta Sayfamı Aç ↗</a>
+
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 Sweet.Ş Edits. Tüm Hakları Saklıdır.</p>
-    </footer>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benim Web Sitem</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #0f0f13;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        /* Header / Navigasyon */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 8%;
-            background-color: #16161a;
-            border-bottom: 1px solid #242629;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .logo span {
-            color: #7f5af0;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
-
-        nav a {
-            color: #94a1b2;
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #7f5af0;
-        }
-
-        /* Ana Bölüm (Hero) */
-        .hero {
-            min-height: 70vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 15px;
-        }
-
-        .hero h1 span {
-            color: #7f5af0;
-        }
-
-        .hero p {
-            color: #94a1b2;
-            max-width: 550px;
-            margin-bottom: 30px;
-            font-size: 1.1rem;
-        }
-
-        .btn {
-            background-color: #7f5af0;
-            color: #ffffff;
-            padding: 12px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.2s, background-color 0.2s;
-        }
-
-        .btn:hover {
-            background-color: #6c47d9;
-            transform: translateY(-2px);
-        }
-
-        /* Kartlar / Projeler */
-        .projects {
-            padding: 50px 8%;
-            background-color: #16161a;
-        }
-
-        .projects h2 {
-            text-align: center;
-            margin-bottom: 35px;
-            font-size: 1.8rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background-color: #242629;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #333;
-            transition: transform 0.3s, border-color 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: #7f5af0;
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: #ffffff;
-            font-size: 1.2rem;
-        }
-
-        .card p {
-            color: #94a1b2;
-            font-size: 0.9rem;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 25px;
-            color: #94a1b2;
-            font-size: 0.85rem;
-            border-top: 1px solid #242629;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Üst Menü -->
-    <header>
-        <div class="logo">Portfolyo<span>.</span></div>
-        <nav>
-            <ul>
-                <li><a href="#home">Ana Sayfa</a></li>
-                <li><a href="#projects">Çalışmalar</a></li>
-                <li><a href="#contact">İletişim</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Ana Hoşgeldin Alanı -->
-    <section id="home" class="hero">
-        <h1>Yaratıcı Dijital <span>İçerikler</span></h1>
-        <p>Video kurgu, grafik tasarım ve dijital projeler için hazırladığım kişisel web siteme hoş geldiniz.</p>
-        <a href="#projects" class="btn">Projeleri İncele</a>
-    </section>
-
-    <!-- Kartlar -->
-    <section id="projects" class="projects">
-        <h2>Neler Yapıyorum?</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Video Edit & Animasyon</h3>
-                <p>Keyframe efektleri, ritmik kurgular ve yüksek kaliteli video düzenlemeleri.</p>
-            </div>
-            <div class="card">
-                <h3>Grafik & Görsel Tasarım</h3>
-                <p>Özel doku tasarımları, dijital çizimler ve sosyal medya görselleri.</p>
-            </div>
-            <div class="card">
-                <h3>Proje Geliştirme</h3>
-                <p>Özel oyun eklentileri, otomasyonlar ve interaktif dijital içerikler.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Alt Bilgi -->
-    <footer>
-        <p>&copy; 2026 Tüm Hakları Saklıdır.</p>
     </footer>
 
 </body>
